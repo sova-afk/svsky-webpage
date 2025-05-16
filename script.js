@@ -18,7 +18,6 @@ const features = [
 const releasesList = document.getElementById('releases-list');
 const featuresList = document.getElementById('features-list');
 
-// Populate the releases as BUTTONS
 releases.forEach(release => {
     const button = document.createElement('button');
     button.textContent = release.name;
@@ -26,7 +25,7 @@ releases.forEach(release => {
     button.addEventListener('click', () => {
         const link = document.createElement('a');
         link.href = release.link;
-        link.download = release.link.split('/').pop(); // Download with filename
+        link.download = release.link.split('/').pop();
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -34,14 +33,12 @@ releases.forEach(release => {
     releasesList.appendChild(button);
 });
 
-// Populate the features as LIST ITEMS
 features.forEach(feature => {
     const li = document.createElement('li');
     li.textContent = feature;
     featuresList.appendChild(li);
 });
 
-// Discord button redirect
 document.getElementById('discord-button').addEventListener('click', () => {
-    window.location.href = "https://discord.gg/au5JRsNucG"; // Replace with your link
+    window.location.href = "https://discord.gg/au5JRsNucG";
 });
