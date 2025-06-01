@@ -1,5 +1,8 @@
 {
     "latestVersion": "1.0.1",
     "latestJarUrl": "https://svsky.x45k.dev/assets/releases/svsky-1.0.1",
-    "patchNotes": "§7- Example patchnote 1\n§7- Example patchnote2"
+    "patchNotes": [
+        "§7- Example patchnote 1",
+        "§7- Example patchnote2"
+    ]
 }
